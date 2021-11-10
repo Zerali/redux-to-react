@@ -3,6 +3,9 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const reduxHeadline = screen.getByText(/Redux/i);
+  expect(reduxHeadline).toBeInTheDocument();
+  
+  const reactHooksHeadline = screen.getByText(/React Hooks/i);
+  expect(reactHooksHeadline).toBeInTheDocument();
 });
